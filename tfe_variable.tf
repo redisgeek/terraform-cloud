@@ -3,7 +3,7 @@ resource "tfe_variable" "ARM_CLIENT_ID-aks-terraform-default" {
   value        = var.client_id
   category     = "env"
   workspace_id = tfe_workspace.aks-terraform-default.id
-  sensitive = true
+  sensitive    = true
 }
 
 resource "tfe_variable" "ARM_CLIENT_SECRET-aks-terraform-default" {
@@ -11,7 +11,7 @@ resource "tfe_variable" "ARM_CLIENT_SECRET-aks-terraform-default" {
   value        = var.client_secret
   category     = "env"
   workspace_id = tfe_workspace.aks-terraform-default.id
-  sensitive = true
+  sensitive    = true
 }
 
 resource "tfe_variable" "ARM_SUBSCRIPTION_ID-aks-terraform-default" {
@@ -19,7 +19,7 @@ resource "tfe_variable" "ARM_SUBSCRIPTION_ID-aks-terraform-default" {
   value        = var.subscription_id
   category     = "env"
   workspace_id = tfe_workspace.aks-terraform-default.id
-  sensitive = true
+  sensitive    = true
 }
 
 resource "tfe_variable" "ARM_TENANT_ID-aks-terraform-default" {
@@ -27,5 +27,5 @@ resource "tfe_variable" "ARM_TENANT_ID-aks-terraform-default" {
   value        = var.tenant_id
   category     = "env"
   workspace_id = tfe_workspace.aks-terraform-default.id
-  sensitive = true
+  sensitive    = true
 }
