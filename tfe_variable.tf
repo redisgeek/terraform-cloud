@@ -61,3 +61,11 @@ resource "tfe_variable" "ARM_TENANT_ID-acre-terraform-geo-replication-migration"
   workspace_id = tfe_workspace.acre-terraform-geo-replication-migration.id
   sensitive    = true
 }
+
+resource "tfe_variable" "SUBSCRIPTION_ID-acre-terraform-geo-replication-migration" {
+  key          = "subscription_id"
+  value        = var.subscription_id
+  category     = "terraform"
+  workspace_id = tfe_workspace.acre-terraform-geo-replication-migration.id
+  sensitive    = true
+}
