@@ -11,3 +11,10 @@ resource "tfe_workspace" "acre-terraform-geo-replication" {
   description        = "CI workspace for acre-terraform-geo-replication"
   allow_destroy_plan = true
 }
+
+resource "tfe_workspace" "acre-terraform-geo-replication-migration" {
+  name               = "acre-terraform-geo-replication-migration"
+  organization       = tfe_organization.redisgeek.name
+  description        = "CI workspace for acre-terraform-geo-replication-migration"
+  allow_destroy_plan = true
+}
