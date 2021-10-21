@@ -1,3 +1,10 @@
+resource "tfe_workspace" "acre-demo" {
+  name               = "acre-demo"
+  organization       = tfe_organization.redisgeek.name
+  description        = "CI workspace for acre-demo"
+  allow_destroy_plan = true
+}
+
 resource "tfe_workspace" "aks-terraform-default" {
   name               = "aks-terraform-default"
   organization       = tfe_organization.redisgeek.name
