@@ -27,7 +27,7 @@ resource "tfe_workspace" "acre-terraform-geo-replication-migration" {
 }
 
 resource "tfe_workspace" "acre-terraform-geo-replication-simple" {
-  name               = "acre-terraform-geo-replication-migration"
+  name               = "acre-terraform-geo-replication-simple"
   organization       = tfe_organization.redisgeek.name
   description        = "CI workspace for acre-terraform-geo-replication-simple"
   allow_destroy_plan = true
