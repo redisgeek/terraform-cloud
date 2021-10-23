@@ -26,6 +26,13 @@ resource "tfe_workspace" "acre-terraform-geo-replication-migration" {
   allow_destroy_plan = true
 }
 
+resource "tfe_workspace" "acre-terraform-geo-replication-simple" {
+  name               = "acre-terraform-geo-replication-migration"
+  organization       = tfe_organization.redisgeek.name
+  description        = "CI workspace for acre-terraform-geo-replication-simple"
+  allow_destroy_plan = true
+}
+
 resource "tfe_workspace" "azure-container-registry" {
   name               = "azure-container-registry"
   organization       = tfe_organization.redisgeek.name
